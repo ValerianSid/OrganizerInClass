@@ -1,0 +1,13 @@
+project:
+  format-date: ${JAVA_DATE_FORMAT:dd-MM-yyyy}
+  format-date-time: dd.MM.yyyy HH:mm:ss
+  security:
+    secret-key: the_very_secret_that_nobody_can_guess
+    token-lifetime-hours: 1
+
+  business:
+    archivation-period-days: 90
+    sheduling:
+      morning-cron: 0 30 10 * * *
+      evening-cron: 0 49 19 * * *
+      uuid-cron: 0 00 00 * * *
